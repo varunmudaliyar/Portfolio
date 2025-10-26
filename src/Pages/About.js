@@ -151,17 +151,17 @@ export default function About() {
                 key={idx}
                 onMouseEnter={() => setActiveSkill(idx)}
                 onMouseLeave={() => setActiveSkill(null)}
-                className="group relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2"
+                className="group relative bg-beige-50 dark:bg-deepBlue-800 rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2"
               >
                 <div
                   className={`text-5xl ${skill.color} mb-3 group-hover:scale-110 transition-transform duration-300 flex justify-center`}
                 >
                   {skill.icon}
                 </div>
-                <p className="text-center font-semibold text-gray-700 dark:text-gray-200 text-sm">
+                <p className="text-center font-semibold text-beige-800 dark:text-beige-100 text-sm">
                   {skill.name}
                 </p>
-                <div className="mt-3 bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
+                <div className="mt-3 bg-beige-200 dark:bg-deepBlue-700 rounded-full h-2 overflow-hidden">
                   <div
                     className={`h-full bg-gradient-to-r from-teal-500 to-orange-500 transition-all duration-700 ${
                       activeSkill === idx ? "opacity-100" : "opacity-0"
@@ -176,7 +176,7 @@ export default function About() {
 
         {/* --------------------- JOURNEY --------------------- */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-textDark dark:text-gray-100 mb-12 text-center">
+          <h3 className="text-3xl font-bold text-beige-900 dark:text-beige-50 mb-12 text-center">
             My Journey
           </h3>
           <div className="relative">
@@ -193,16 +193,16 @@ export default function About() {
                     idx % 2 === 0 ? "md:text-right md:pr-12" : "md:text-left md:pl-12"
                   }`}
                 >
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                  <div className="bg-beige-50 dark:bg-deepBlue-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                     <span
                       className={`inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3 bg-${item.color}-100 dark:bg-${item.color}-900/30 text-${item.color}-600 dark:text-${item.color}-400`}
                     >
                       {item.year}
                     </span>
-                    <h4 className="text-xl font-bold text-textDark dark:text-gray-100 mb-2">
+                    <h4 className="text-xl font-bold text-beige-900 dark:text-beige-50 mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">{item.description}</p>
+                    <p className="text-beige-700 dark:text-beige-200 text-sm">{item.description}</p>
                   </div>
                 </div>
                 <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-br from-teal-500 to-orange-500 items-center justify-center text-white text-xl shadow-lg">
@@ -215,7 +215,7 @@ export default function About() {
 
         {/* --------------------- INTERESTS --------------------- */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-textDark dark:text-gray-100 mb-8 text-center">
+          <h3 className="text-3xl font-bold text-beige-900 dark:text-beige-50 mb-8 text-center">
             Areas of Interest
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -233,19 +233,19 @@ export default function About() {
 
         {/* --------------------- ACHIEVEMENTS --------------------- */}
         <div className="mb-20 bg-gradient-to-r from-teal-500/10 to-orange-500/10 rounded-3xl p-8">
-          <h3 className="text-3xl font-bold text-textDark dark:text-gray-100 mb-8 text-center">
+          <h3 className="text-3xl font-bold text-beige-900 dark:text-beige-50 mb-8 text-center">
             Recognitions & Achievements
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {achievements.map((ach, idx) => (
               <div
                 key={idx}
-                className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-beige-50 dark:bg-deepBlue-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300"
               >
                 <h4 className="font-bold text-lg text-teal-600 dark:text-orange-400 mb-2">
                   {ach.title}
                 </h4>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{ach.description}</p>
+                <p className="text-beige-700 dark:text-beige-200 text-sm">{ach.description}</p>
               </div>
             ))}
           </div>
@@ -255,7 +255,7 @@ export default function About() {
         <form
           id="contact"
           onSubmit={handleSubmit}
-          className="w-full max-w-3xl bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 shadow-2xl rounded-3xl p-8 md:p-10 space-y-6 mx-auto border border-gray-200 dark:border-gray-700"
+          className="w-full max-w-3xl bg-gradient-to-br from-beige-50 to-beige-100 dark:from-deepBlue-800 dark:to-deepBlue-900 shadow-2xl rounded-3xl p-8 md:p-10 space-y-6 mx-auto border border-beige-300 dark:border-deepBlue-700"
         >
           <div className="text-center mb-6">
             <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-orange-500 mb-2">

@@ -170,24 +170,24 @@ export default function Home() {
 
       {/* Experience Section */}
       <div className="container mx-auto px-4 mt-16 mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-textDark dark:text-gray-100 mb-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-beige-900 dark:text-beige-50 mb-10 text-center">
           Projects & Achievements
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {experiences.map((exp, idx) => (
             <div
               key={idx}
-              className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
+              className="group relative bg-beige-50 dark:bg-deepBlue-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
             >
               <div className={`h-1 bg-gradient-to-r ${exp.gradient}`} />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-teal-600 dark:text-teal-400 mb-2">
                   {exp.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm font-medium mb-2">
+                <p className="text-beige-700 dark:text-beige-200 text-sm font-medium mb-2">
                   {exp.tech}
                 </p>
-                <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                <p className="text-beige-600 dark:text-beige-300 text-sm leading-relaxed">
                   {exp.description}
                 </p>
               </div>
@@ -202,10 +202,10 @@ export default function Home() {
       {/* Featured Projects */}
       <div className="container mx-auto px-4 mb-20">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-textDark dark:text-gray-100 mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-beige-900 dark:text-beige-50 mb-3">
             Featured Projects
           </h2>
-          <p className="text-gray-600 dark:text-gray-300">
+          <p className="text-beige-700 dark:text-beige-200">
             A few of my most impactful creations
           </p>
         </div>
@@ -215,7 +215,7 @@ export default function Home() {
             <div
               key={project.id}
               onClick={handleProjectClick}
-              className="group cursor-pointer bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
+              className="group cursor-pointer bg-beige-50 dark:bg-deepBlue-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
             >
               <div className="p-8 text-center">
                 <div
@@ -224,11 +224,11 @@ export default function Home() {
                   {project.icon}
                 </div>
 
-                <h3 className="text-xl font-bold text-textDark dark:text-gray-100 mb-3">
+                <h3 className="text-xl font-bold text-beige-900 dark:text-beige-50 mb-3">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                <p className="text-beige-700 dark:text-beige-200 mb-4 text-sm">
                   {project.description}
                 </p>
 

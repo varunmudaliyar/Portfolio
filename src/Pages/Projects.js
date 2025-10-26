@@ -95,9 +95,9 @@ export default function Projects() {
   const ProjectCard = ({ project }) => (
     <div
       onClick={() => setSelectedProject(project)}
-      className="group cursor-pointer bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
+      className="group cursor-pointer bg-beige-50 dark:bg-deepBlue-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
     >
-      <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800">
+      <div className="relative h-48 overflow-hidden bg-gradient-to-br from-beige-200 to-beige-300 dark:from-deepBlue-700 dark:to-deepBlue-800">
         <img
           src={project.image}
           alt={project.title}
@@ -105,7 +105,7 @@ export default function Projects() {
         />
         <div className="absolute top-4 right-4">
           <span
-            className={`px-3 py-1 rounded-full text-xs font-bold bg-white/90 dark:bg-gray-800/90 text-${project.color}-600`}
+            className={`px-3 py-1 rounded-full text-xs font-bold bg-beige-50/90 dark:bg-deepBlue-900/90 text-${project.color}-600`}
           >
             {project.status}
           </span>
@@ -118,10 +118,10 @@ export default function Projects() {
         >
           {project.icon}
         </div>
-        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+        <h3 className="text-xl font-bold text-beige-900 dark:text-beige-50 mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
           {project.title}
         </h3>
-        <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">{project.shortDesc}</p>
+        <p className="text-beige-700 dark:text-beige-200 text-sm mb-4">{project.shortDesc}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.slice(0, 3).map((tech, idx) => (
@@ -133,14 +133,14 @@ export default function Projects() {
             </span>
           ))}
           {project.technologies.length > 3 && (
-            <span className="px-2 py-1 text-xs font-medium text-gray-500">
+            <span className="px-2 py-1 text-xs font-medium text-beige-600 dark:text-beige-400">
               +{project.technologies.length - 3} more
             </span>
           )}
         </div>
 
         <div className="flex items-center justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-400">{project.year}</span>
+          <span className="text-sm text-beige-600 dark:text-beige-400">{project.year}</span>
           <button className="text-teal-600 dark:text-teal-400 font-semibold text-sm group-hover:text-orange-500 transition-colors">
             View Details →
           </button>
@@ -154,11 +154,11 @@ export default function Projects() {
 
     return (
       <div
-        className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto"
+        className="fixed inset-0 bg-deepBlue-950/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto"
         onClick={onClose}
       >
         <div
-          className="bg-white dark:bg-gray-800 rounded-3xl max-w-4xl w-full shadow-2xl my-8 overflow-hidden"
+          className="bg-beige-50 dark:bg-deepBlue-800 rounded-3xl max-w-4xl w-full shadow-2xl my-8 overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
           <div
@@ -181,14 +181,14 @@ export default function Projects() {
 
           <div className="p-8 max-h-96 overflow-y-auto">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">
+              <h3 className="text-2xl font-bold text-beige-900 dark:text-beige-50 mb-3">
                 About the Project
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{project.fullDesc}</p>
+              <p className="text-beige-700 dark:text-beige-200 leading-relaxed">{project.fullDesc}</p>
             </div>
 
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+              <h3 className="text-xl font-bold text-beige-900 dark:text-beige-50 mb-4">
                 Technologies Used
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -204,12 +204,12 @@ export default function Projects() {
             </div>
 
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Key Features</h3>
+              <h3 className="text-xl font-bold text-beige-900 dark:text-beige-50 mb-4">Key Features</h3>
               <ul className="space-y-2">
                 {project.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
                     <span className={`text-${project.color}-500 mr-2 mt-1`}>✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">{feature}</span>
+                    <span className="text-beige-700 dark:text-beige-200">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -221,7 +221,7 @@ export default function Projects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-gray-800 dark:bg-gray-700 text-white rounded-xl hover:bg-gray-900 dark:hover:bg-gray-600 transition-all font-semibold"
+                  className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-beige-800 dark:bg-deepBlue-700 text-beige-50 rounded-xl hover:bg-beige-900 dark:hover:bg-deepBlue-600 transition-all font-semibold"
                 >
                   <FaGithub /> View on GitHub
                 </a>
@@ -244,14 +244,14 @@ export default function Projects() {
   };
 
   return (
-    <section className="bg-white dark:bg-gray-900 py-20 min-h-screen" id="projects">
+    <section className="bg-beige-100 dark:bg-deepBlue-900 py-20 min-h-screen" id="projects">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-orange-500 mb-4">
             My Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-orange-500 mx-auto mb-6"></div>
-          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-beige-700 dark:text-beige-200 text-lg max-w-2xl mx-auto">
             Explore my journey through code, innovation, and problem-solving
           </p>
         </div>
@@ -266,10 +266,10 @@ export default function Projects() {
 
         <div className="mt-20 text-center">
           <div className="bg-gradient-to-r from-teal-500/10 to-orange-500/10 rounded-3xl p-12">
-            <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+            <h3 className="text-3xl font-bold text-beige-900 dark:text-beige-50 mb-4">
               Have a Project in Mind?
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-beige-700 dark:text-beige-200 mb-8 max-w-2xl mx-auto">
               I'm always excited to work on new ideas and collaborate on interesting projects.
               Let's build something amazing together!
             </p>
