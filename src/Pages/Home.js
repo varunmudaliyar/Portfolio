@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaRocket } from "react-icons/fa";
+import { FaRobot } from "react-icons/fa";
 import { GiWaterDrop } from "react-icons/gi";
 import { FaBrain, FaTrain } from "react-icons/fa";
 import profile from "../assets/profile.png";
@@ -93,7 +93,7 @@ export default function Home() {
   };
 
   return (
-    <section className="pt-20 sm:pt-16 md:pt-24 bg-cream dark:bg-gray-900 overflow-hidden">
+    <section className="pt-20 sm:pt-16 md:pt-24 bg-beige-100 dark:bg-deepBlue-900 overflow-hidden">
       {/* Hero Section */}
       <div className="container mx-auto px-4 relative">
         {/* Particle Animation */}
@@ -117,7 +117,7 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-textDark dark:text-gray-100">
               Hey, I’m <span className="text-teal-500">Varun Mudaliyar</span>
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg mb-4">
+            <p className="text-beige-700 dark:text-beige-200 text-base sm:text-lg mb-4">
               A passionate{" "}
               <span className="text-orange-500 font-semibold">
                 IoT & AI Developer
@@ -125,7 +125,7 @@ export default function Home() {
               focused on creating smarter, connected systems that solve
               real-world problems.
             </p>
-            <p className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-200 mb-6">
+            <p className="text-sm sm:text-base font-medium text-beige-800 dark:text-beige-100 mb-6">
               mudaliyarvarun21@gmail.com
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function Home() {
           <div className="md:w-1/2 relative">
             <div className="relative flex justify-center py-4 md:py-8">
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <FaRocket
+                <FaRobot
                   className="text-orange-500 text-3xl opacity-60 absolute"
                   style={{
                     animation: "rocket 4s ease-in-out infinite",

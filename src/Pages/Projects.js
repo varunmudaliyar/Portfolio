@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { GiWaterDrop } from "react-icons/gi";
 import { FaBrain, FaTrain, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import sdd from "../assets/sdd.jpeg";
+import sis from "../assets/sis.png";
+import image from "../assets/image.png";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -18,7 +20,7 @@ export default function Projects() {
       color: "blue",
       gradient: "from-blue-500 to-indigo-600",
       bgPattern: "bg-blue-50 dark:bg-blue-900/20",
-      image: "https://via.placeholder.com/600x400/3b82f6/ffffff?text=Smart+Irrigation",
+      image: sis,
       technologies: [
         "ESP8266/Arduino",
         "Soil Moisture Sensors",
@@ -35,7 +37,7 @@ export default function Projects() {
         "Water usage analytics",
         "Multiple zone management"
       ],
-      github: "https://github.com/VarunMudaliyar",
+      github: "https://github.com/varunmudaliyar/CropConnect",
       demo: null,
       status: "Completed",
       year: "2024"
@@ -75,7 +77,7 @@ export default function Projects() {
       color: "orange",
       gradient: "from-orange-500 to-red-500",
       bgPattern: "bg-orange-50 dark:bg-orange-900/20",
-      image: "https://via.placeholder.com/600x400/f97316/ffffff?text=Train+Routing",
+      image: image,
       technologies: ["IoT", "Embedded Systems", "Sensors", "ESP32", "Automation"],
       features: [
         "Real-time train location tracking",

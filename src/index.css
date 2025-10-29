@@ -9,11 +9,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-beige-100 text-gray-800;
+  @apply bg-beige-100 text-beige-900;
 }
 
 body.dark {
-  @apply bg-deepBlue-900 text-gray-100;
+  @apply bg-deepBlue-900 text-beige-50;
 }
 
 code {

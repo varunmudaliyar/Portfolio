@@ -120,7 +120,7 @@ export default function About() {
   ];
 
   return (
-    <section className="bg-white dark:bg-gray-900 py-20" id="about">
+    <section className="bg-beige-100 dark:bg-deepBlue-900 py-20" id="about">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* --------------------- HEADER --------------------- */}
         <div className="text-center mb-16">
@@ -128,7 +128,7 @@ export default function About() {
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-orange-500 mx-auto mb-8"></div>
-          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-beige-700 dark:text-beige-200 text-lg max-w-3xl mx-auto leading-relaxed">
             I’m <span className="font-semibold text-teal-500">Varun Mudaliyar</span>, an enthusiastic
             and result-driven developer passionate about{" "}
             <span className="text-orange-500 font-semibold">IoT</span>,{" "}
@@ -225,7 +225,7 @@ export default function About() {
                 className={`${interest.color} rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300 cursor-pointer`}
               >
                 <div className="text-4xl mb-2">{interest.emoji}</div>
-                <p className="font-semibold text-gray-700 dark:text-gray-200">{interest.name}</p>
+                <p className="font-semibold text-beige-800 dark:text-beige-100">{interest.name}</p>
               </div>
             ))}
           </div>
@@ -261,7 +261,7 @@ export default function About() {
             <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-orange-500 mb-2">
               Let's Connect
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-beige-700 dark:text-beige-200">
               Have a project or idea? Let’s collaborate and build something impactful.
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function About() {
               type="text"
               placeholder="First Name"
               required
-              className="w-full border-2 border-gray-300 dark:border-gray-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-teal-400 dark:bg-gray-800 dark:text-white transition-all"
+              className="w-full border-2 border-beige-300 dark:border-deepBlue-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-teal-400 dark:bg-deepBlue-800 dark:text-beige-50 bg-beige-50 text-beige-900 transition-all"
             />
             <input
               name="lastName"
@@ -284,7 +284,7 @@ export default function About() {
               type="text"
               placeholder="Last Name"
               required
-              className="w-full border-2 border-gray-300 dark:border-gray-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:text-white transition-all"
+              className="w-full border-2 border-beige-300 dark:border-deepBlue-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-400 dark:bg-deepBlue-800 dark:text-beige-50 bg-beige-50 text-beige-900 transition-all"
             />
           </div>
 
@@ -295,7 +295,7 @@ export default function About() {
             type="email"
             placeholder="Email Address"
             required
-            className="w-full border-2 border-gray-300 dark:border-gray-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:text-white transition-all"
+            className="w-full border-2 border-beige-300 dark:border-deepBlue-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-400 dark:bg-deepBlue-800 dark:text-beige-50 bg-beige-50 text-beige-900 transition-all"
           />
           <input
             name="phone"
@@ -303,7 +303,7 @@ export default function About() {
             onChange={handleChange}
             type="tel"
             placeholder="+91 12345 67890"
-            className="w-full border-2 border-gray-300 dark:border-gray-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:text-white transition-all"
+            className="w-full border-2 border-beige-300 dark:border-deepBlue-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-400 dark:bg-deepBlue-800 dark:text-beige-50 bg-beige-50 text-beige-900 transition-all"
           />
           <textarea
             name="message"
@@ -312,7 +312,7 @@ export default function About() {
             rows={5}
             placeholder="Tell me about your project or idea..."
             required
-            className="w-full border-2 border-gray-300 dark:border-gray-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:text-white transition-all resize-none"
+            className="w-full border-2 border-beige-300 dark:border-deepBlue-600 rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-400 dark:bg-deepBlue-800 dark:text-beige-50 bg-beige-50 text-beige-900 transition-all resize-none"
           />
           <button
             type="submit"
@@ -323,7 +323,7 @@ export default function About() {
         </form>
 
         {/* --------------------- QUOTE --------------------- */}
-        <p className="text-center text-gray-600 dark:text-gray-400 mt-12 italic">
+        <p className="text-center text-beige-600 dark:text-beige-400 mt-12 italic">
           “Innovating real-world systems through smart connectivity.”
         </p>
       </div>
